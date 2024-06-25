@@ -1,0 +1,25 @@
+{
+  "name": "vite-hex-transform",
+  "version": "1.0.0",
+  "description": "Converts hex colors to 0xRRGGBBAA format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightning-tv/vite-hex-transform.git"
+  },
+  "keywords": [
+    "vite",
+    "lightning",
+    "hex",
+    "colors"
+  ],
+  "author": "Chris Lorenzo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lightning-tv/vite-hex-transform/issues"
+  },
+  "homepage": "https://github.com/lightning-tv/vite-hex-transform#readme"
+}
