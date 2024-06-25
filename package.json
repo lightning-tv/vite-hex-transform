@@ -1,5 +1,5 @@
 {
-  "name": "vite-hex-transform",
+  "name": "@lightningtv/vite-hex-transform",
   "version": "1.0.0",
   "description": "Converts hex colors to 0xRRGGBBAA format",
   "main": "index.js",
