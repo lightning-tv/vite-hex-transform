@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Converts hex colors to 0xRRGGBBAA format",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
