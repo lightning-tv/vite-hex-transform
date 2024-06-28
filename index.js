@@ -1,8 +1,17 @@
-export default function hexColorTransform() {
+import { createFilter } from 'vite';
+export default function hexColorTransform(options = {}) {
+  const filter = createFilter(options.include, options.exclude);
+
   return {
     name: "vite-plugin-hex-color-transform", // Name of the plugin
 
     transform(code, id) {
+
+      // Check if the file should be included or excluded
+      if (!filter(id)) {
+        return null;
+      }
+
       // Regular expression to match hexColor("#RRGGBB"), hexColor("#RGB"), hexColor("#RRGGBBAA"), and hexColor("#RGBA")
       const hexColorRegex =
         /["']#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3}|[A-Fa-f0-9]{8}|[A-Fa-f0-9]{4})["']/g;
