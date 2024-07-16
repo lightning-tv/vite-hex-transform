@@ -10,9 +10,11 @@ If you were using hexColor, you can find and replace all instances with:
 
 Use VSCode to remove hexColor
 ```js
-hexColor\("(#[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"\)
+hexColor\("(#[A-Fa-f0-9]{4,8})"\)
 "$1"
 ```
+
+Be mindful of single vs double quotes - the regex is looking for double.
 
 Additionally, Enable `default color decorators` in VScode in your settings (Command + , to search for the setting) to get built in color highlighting
 
